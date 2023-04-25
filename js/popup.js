@@ -18,7 +18,6 @@ chrome.storage.sync.get('enabled', function (data) {
 });
 
 chrome.storage.sync.get('autoRef', function (data) {
-    console.log(data)
     autoRefCheckBox.checked = data.autoRef;
 });
 
