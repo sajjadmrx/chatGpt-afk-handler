@@ -1,0 +1,31 @@
+{
+    "name": "ChatGpt Auto Refresh Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "webRequest",
+        "declarativeNetRequest",
+        "tabs",
+        "storage",
+        "idle"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "host_permissions": [
+        "https://chat.openai.com/"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "js/script.js"
+            ]
+        }
+    ]
+}
