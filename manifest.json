@@ -1,5 +1,5 @@
 {
-    "name": "ChatGpt Auto Refresh Extension",
+    "name": "ChatGpt Afk Handler Extension",
     "version": "1.0",
     "manifest_version": 3,
     "permissions": [
